@@ -2,6 +2,7 @@
 require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
+require("hardhat-deploy");
 
 // Libraries
 const assert = require("assert");
@@ -25,6 +26,13 @@ const POKEME_ADDRESS = "0xeC8700A092789F58608212E314e3576bF2E98556";
  */
 module.exports = {
   defaultNetwork: "hardhat",
+
+  // hardhat-deploy
+  namedAccounts: {
+    deployer: {
+      default: 0,
+    },
+  },
 
   networks: {
     hardhat: {

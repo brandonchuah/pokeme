@@ -7,6 +7,7 @@
     "compile": "npx hardhat compile",
     "verify": "npx hardhat etherscan-verify",
     "test": "npx hardhat test",
+    "deploy": "npx hardhat deploy",
     "deploy-counter": "npx hardhat run ./scripts/deploy-counter-ropsten.js",
     "deposit": "npx hardhat run ./scripts/deposit-funds.js",
     "submit-task": "npx hardhat run ./scripts/submit-task.js",
